@@ -6,6 +6,11 @@
 [![dependencies](https://img.shields.io/david/eclass/grade-scales.svg)](https://david-dm.org/eclass/grade-scales)
 [![devDependency Status](https://img.shields.io/david/dev/eclass/grade-scales.svg)](https://david-dm.org/eclass/grade-scales#info=devDependencies)
 
+## Instalación
+```
+  npm i @eclass/grade-scales
+```
+
 Este módulo permite calcular notas en base a una escala de notas.
 La escala debe tener algunos valores que se listan a continuación:
 
