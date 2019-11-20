@@ -5,7 +5,7 @@ import { ScaleAttributes } from './types'
  *
  * @example const rounded = gradeRound(60.522, scale)
  */
-const gradeRound = (grade: number, scale: ScaleAttributes): number => {
+export const gradeRound = (grade: number, scale: ScaleAttributes): number => {
   try {
     let rounded: any
     if (scale.decimals > 0) {
@@ -27,5 +27,3 @@ const gradeRound = (grade: number, scale: ScaleAttributes): number => {
     return 0
   }
 }
-
-export default gradeRound

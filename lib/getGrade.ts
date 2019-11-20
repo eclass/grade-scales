@@ -1,4 +1,4 @@
-import gradeRound from './grades/gradeRound'
+import { gradeRound } from './grades/'
 import { ScaleAttributes } from './grades/types'
 
 /**
@@ -6,7 +6,7 @@ import { ScaleAttributes } from './grades/types'
  *
  * @example const grade = calcGrade(scale, total, obtained)
  */
-const calcGrade = (
+export const calcGrade = (
   scale: ScaleAttributes,
   total: number,
   obtained: number
@@ -57,7 +57,7 @@ export type Scores = {
  *
  * @example const grade = getGrade({ total: 4, obtained: 4 }, scale)
  */
-const getGrade = (scores: Scores, scale: ScaleAttributes): number => {
+export const getGrade = (scores: Scores, scale: ScaleAttributes): number => {
   const { total, obtained } = scores
 
   if (obtained >= total) {
@@ -69,5 +69,3 @@ const getGrade = (scores: Scores, scale: ScaleAttributes): number => {
     return gradeRound(grade, scale)
   }
 }
-
-export default getGrade

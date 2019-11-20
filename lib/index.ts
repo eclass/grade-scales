@@ -1,7 +1,2 @@
-import getAverage from './getAverage'
-import getGrade from './getGrade'
-
-export default {
-  getAverage,
-  getGrade
-}
+export * from './getAverage'
+export * from './getGrade'

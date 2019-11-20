@@ -1,4 +1,4 @@
-import gradeRound from './gradeRound'
+import { gradeRound } from './gradeRound'
 import { ScaleAttributes } from './types'
 
 /**
@@ -6,9 +6,10 @@ import { ScaleAttributes } from './types'
  *
  * @example const approved = gradeIsApproved(grade, scale)
  */
-const gradeIsApproved = (grade: number, scale: ScaleAttributes): boolean => {
+export const gradeIsApproved = (
+  grade: number,
+  scale: ScaleAttributes
+): boolean => {
   const rounded = gradeRound(grade, scale)
   return rounded >= scale.passingGrade
 }
-
-export default gradeIsApproved

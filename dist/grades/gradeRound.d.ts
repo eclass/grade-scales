@@ -4,6 +4,5 @@ import { ScaleAttributes } from './types';
  *
  * @example const rounded = gradeRound(60.522, scale)
  */
-declare const gradeRound: (grade: number, scale: ScaleAttributes) => number;
-export default gradeRound;
+export declare const gradeRound: (grade: number, scale: ScaleAttributes) => number;
 //# sourceMappingURL=gradeRound.d.ts.map

@@ -4,6 +4,5 @@ import { ScaleAttributes } from './types';
  *
  * @example const approved = gradeIsApproved(grade, scale)
  */
-declare const gradeIsApproved: (grade: number, scale: ScaleAttributes) => boolean;
-export default gradeIsApproved;
+export declare const gradeIsApproved: (grade: number, scale: ScaleAttributes) => boolean;
 //# sourceMappingURL=gradeIsApproved.d.ts.map

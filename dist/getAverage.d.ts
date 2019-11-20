@@ -14,6 +14,6 @@ declare type AverageParams = {
  *
  * @example const average = getAverage(scale, { grades: [3,4,6] })
  */
-declare const average: (scale: ScaleAttributes, params: AverageParams) => QualificationType;
-export default average;
+export declare const getAverage: (scale: ScaleAttributes, params: AverageParams) => QualificationType;
+export {};
 //# sourceMappingURL=getAverage.d.ts.map

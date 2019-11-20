@@ -1,6 +1,4 @@
-import gradeFormat from './grades/gradeFormat'
-import gradeRound from './grades/gradeRound'
-import gradeStatus from './grades/gradeStatus'
+import { gradeFormat, gradeRound, gradeStatus } from './grades/'
 import { ScaleAttributes, QualificationType } from './grades/types'
 
 type AverageParams = {
@@ -20,7 +18,7 @@ type AverageParams = {
  *
  * @example const average = getAverage(scale, { grades: [3,4,6] })
  */
-const average = (
+export const getAverage = (
   scale: ScaleAttributes,
   params: AverageParams
 ): QualificationType => {
@@ -74,5 +72,3 @@ const average = (
     status: gradeStatus(scale, average)
   }
 }
-
-export default average

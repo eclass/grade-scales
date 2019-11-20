@@ -1,5 +1,11 @@
 import { ScaleAttributes } from './grades/types';
 /**
+ * Hace el cálculo de la nota en base al puntaje obtenido y el total con la Escala de notas
+ *
+ * @example const grade = calcGrade(scale, total, obtained)
+ */
+export declare const calcGrade: (scale: ScaleAttributes, total: number, obtained: number) => number;
+/**
  * Puntajes totales y obtenidos.
  */
 export declare type Scores = {
@@ -20,6 +26,5 @@ export declare type Scores = {
  *
  * @example const grade = getGrade({ total: 4, obtained: 4 }, scale)
  */
-declare const getGrade: (scores: Scores, scale: ScaleAttributes) => number;
-export default getGrade;
+export declare const getGrade: (scores: Scores, scale: ScaleAttributes) => number;
 //# sourceMappingURL=getGrade.d.ts.map

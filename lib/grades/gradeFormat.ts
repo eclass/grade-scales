@@ -1,4 +1,4 @@
-import gradeRound from './gradeRound'
+import { gradeRound } from './gradeRound'
 import { ScaleAttributes } from './types'
 
 /**
@@ -7,12 +7,10 @@ Agrega puntos, comas, caracteres antes o despues de la nota.
  *
  * @example const formated = gradeFormat(grade, scale)
  */
-const gradeFormat = (grade: number, scale: ScaleAttributes): string => {
+export const gradeFormat = (grade: number, scale: ScaleAttributes): string => {
   return [
     scale.prepend,
     String(gradeRound(grade, scale)).replace('.', scale.decimalSeparator),
     scale.append
   ].join('')
 }
-
-export default gradeFormat

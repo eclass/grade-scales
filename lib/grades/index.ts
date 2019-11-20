@@ -1,11 +1,4 @@
-import gradeFormat from './gradeFormat'
-import gradeIsApproved from './gradeIsApproved'
-import gradeRound from './gradeRound'
-import gradeStatus from './gradeStatus'
-
-module.exports = {
-  gradeFormat,
-  gradeIsApproved,
-  gradeRound,
-  gradeStatus
-}
+export { gradeFormat } from './gradeFormat'
+export { gradeIsApproved } from './gradeIsApproved'
+export { gradeRound } from './gradeRound'
+export { gradeStatus } from './gradeStatus'

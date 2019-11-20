@@ -1,10 +1,13 @@
-import gradeIsApproved from './gradeIsApproved'
+import { gradeIsApproved } from './gradeIsApproved'
 import { ScaleAttributes, StatusReturn } from './types'
 
 /**
  * @example const checkStatus = gradeStatus(grade, scale)
  */
-const gradeStatus = (scale: ScaleAttributes, grade?: number): StatusReturn => {
+export const gradeStatus = (
+  scale: ScaleAttributes,
+  grade?: number
+): StatusReturn => {
   const approved = gradeIsApproved(grade, scale)
   const status = new Map([
     [
@@ -41,5 +44,3 @@ const gradeStatus = (scale: ScaleAttributes, grade?: number): StatusReturn => {
 
   return grade ? status.get(approved) : status.get(null)
 }
-
-export default gradeStatus
