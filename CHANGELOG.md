@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/eclass/grade-scales/compare/v1.0.1...v1.1.0) (2019-11-20)
+
+
+### Features
+
+* **grades:** agregamos nota formateada ([cd609d4](https://github.com/eclass/grade-scales/commit/cd609d4390b0cafe2828f707df2948a42067070d))
+
 ## [1.0.1](https://github.com/eclass/grade-scales/compare/v1.0.0...v1.0.1) (2019-11-20)
 
 
