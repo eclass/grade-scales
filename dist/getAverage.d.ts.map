@@ -1,0 +1,1 @@
+{"version":3,"file":"getAverage.d.ts","sourceRoot":"","sources":["../lib/getAverage.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,eAAe,EAAE,iBAAiB,EAAE,MAAM,gBAAgB,CAAA;AAEnE,aAAK,aAAa,GAAG;IACnB;;OAEG;IACH,MAAM,EAAE,MAAM,EAAE,CAAA;IAEhB;;OAEG;IACH,OAAO,EAAE,MAAM,EAAE,CAAA;CAClB,CAAA;AAED;;;;GAIG;AACH,QAAA,MAAM,OAAO,sEAqDZ,CAAA;AAED,eAAe,OAAO,CAAA"}

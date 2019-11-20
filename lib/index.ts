@@ -1,1 +1,5 @@
-export default function() {}
+import getAverage from './getAverage'
+
+export default {
+  getAverage
+}

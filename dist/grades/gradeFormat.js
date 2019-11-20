@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const gradeRound_1 = require("./gradeRound");
+/**
+ * Formatea una nota según la escala recibida por parámetro.
+Agrega puntos, comas, caracteres antes o despues de la nota.
+ *
+ * @example const formated = gradeFormat(grade, scale)
+ */
+const gradeFormat = (grade, scale) => {
+    return [
+        scale.prepend,
+        String(gradeRound_1.default(grade, scale)).replace('.', scale.decimalSeparator),
+        scale.append
+    ].join('');
+};
+exports.default = gradeFormat;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ3JhZGVGb3JtYXQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9saWIvZ3JhZGVzL2dyYWRlRm9ybWF0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQXFDO0FBR3JDOzs7OztHQUtHO0FBQ0gsTUFBTSxXQUFXLEdBQUcsQ0FBQyxLQUFhLEVBQUUsS0FBc0IsRUFBVSxFQUFFO0lBQ3BFLE9BQU87UUFDTCxLQUFLLENBQUMsT0FBTztRQUNiLE1BQU0sQ0FBQyxvQkFBVSxDQUFDLEtBQUssRUFBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxHQUFHLEVBQUUsS0FBSyxDQUFDLGdCQUFnQixDQUFDO1FBQ3JFLEtBQUssQ0FBQyxNQUFNO0tBQ2IsQ0FBQyxJQUFJLENBQUMsRUFBRSxDQUFDLENBQUE7QUFDWixDQUFDLENBQUE7QUFFRCxrQkFBZSxXQUFXLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZ3JhZGVSb3VuZCBmcm9tICcuL2dyYWRlUm91bmQnXG5pbXBvcnQgeyBTY2FsZUF0dHJpYnV0ZXMgfSBmcm9tICcuL3R5cGVzJ1xuXG4vKipcbiAqIEZvcm1hdGVhIHVuYSBub3RhIHNlZ8O6biBsYSBlc2NhbGEgcmVjaWJpZGEgcG9yIHBhcsOhbWV0cm8uXG5BZ3JlZ2EgcHVudG9zLCBjb21hcywgY2FyYWN0ZXJlcyBhbnRlcyBvIGRlc3B1ZXMgZGUgbGEgbm90YS5cbiAqXG4gKiBAZXhhbXBsZSBjb25zdCBmb3JtYXRlZCA9IGdyYWRlRm9ybWF0KGdyYWRlLCBzY2FsZSlcbiAqL1xuY29uc3QgZ3JhZGVGb3JtYXQgPSAoZ3JhZGU6IG51bWJlciwgc2NhbGU6IFNjYWxlQXR0cmlidXRlcyk6IHN0cmluZyA9PiB7XG4gIHJldHVybiBbXG4gICAgc2NhbGUucHJlcGVuZCxcbiAgICBTdHJpbmcoZ3JhZGVSb3VuZChncmFkZSwgc2NhbGUpKS5yZXBsYWNlKCcuJywgc2NhbGUuZGVjaW1hbFNlcGFyYXRvciksXG4gICAgc2NhbGUuYXBwZW5kXG4gIF0uam9pbignJylcbn1cblxuZXhwb3J0IGRlZmF1bHQgZ3JhZGVGb3JtYXRcbiJdfQ==
