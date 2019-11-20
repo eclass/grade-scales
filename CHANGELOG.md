@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/eclass/grade-scales/compare/v1.0.0...v1.0.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* **config:** cambiamos forma de exportar funciones ([878720b](https://github.com/eclass/grade-scales/commit/878720b8a9888a479c091e40cbda701fcaf2d98a))
+
 # 1.0.0 (2019-11-20)
 
 
