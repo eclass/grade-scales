@@ -1,6 +1,6 @@
 {
   "name": "@eclass/grade-scales",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Módulo para calcular notas en base a una escala.",
   "main": "dist/index.js",
   "type": "commonjs",
@@ -10,7 +10,8 @@
     "format": "prettier-standard 'lib/**/*.ts'",
     "lint": "eslint 'lib/**/*.ts' --fix",
     "test": "cd test && npm run test",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -54,7 +55,7 @@
     "husky": "3.1.0",
     "lint-staged": "9.4.3",
     "prettier-standard": "15.0.1",
-    "semantic-release": "15.13.31",
+    "semantic-release": "^15.13.31",
     "ts-node": "8.5.2",
     "typescript": "3.7.2"
   },
