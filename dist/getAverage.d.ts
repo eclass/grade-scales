@@ -7,7 +7,7 @@ declare type AverageParams = {
     /**
      * Ponderaciones.
      */
-    weights: number[];
+    weights?: number[];
 };
 /**
  * Calcula el promedio de una o mas notas, con sus ponderaciones.
