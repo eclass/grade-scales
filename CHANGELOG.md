@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/eclass/grade-scales/compare/v1.1.0...v1.2.0) (2019-11-20)
+
+
+### Features
+
+* **readme:** documentacion base ([55ab6ee](https://github.com/eclass/grade-scales/commit/55ab6ee850162df268fc609fda5acc5f6e048ea2))
+
 # [1.1.0](https://github.com/eclass/grade-scales/compare/v1.0.1...v1.1.0) (2019-11-20)
 
 
