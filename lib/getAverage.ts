@@ -1,4 +1,4 @@
-import { gradeFormat, gradeRound, gradeStatus } from './grades/'
+import { gradeFormat, gradeRound, gradeStatus } from './grades'
 import { ScaleAttributes, QualificationType } from './grades/types'
 
 type AverageParams = {
@@ -10,7 +10,7 @@ type AverageParams = {
   /**
    * Ponderaciones.
    */
-  weights: number[]
+  weights?: number[]
 }
 
 /**
@@ -22,14 +22,10 @@ export const getAverage = (
   scale: ScaleAttributes,
   params: AverageParams
 ): QualificationType => {
-  if (!scale) {
-    throw new Error('No existe la escala consultada')
-  }
-
   /**
    * Redondeamos las notas.
    */
-  const grades = params.grades.map(grade => gradeRound(grade, scale))
+  const grades = params.grades.map(grade => gradeRound(scale, grade))
 
   /**
    * - Si vienen las ponderaciones entonces las usamos para calcular el promedio
@@ -44,8 +40,8 @@ export const getAverage = (
    */
   if (grades.length === 0 || grades.length !== weights.length) {
     return {
-      value: gradeRound(scale.min, scale),
-      valueFormatted: gradeFormat(scale.min, scale),
+      value: gradeRound(scale, scale.min),
+      valueFormatted: gradeFormat(scale, scale.min),
       status: gradeStatus(scale, null)
     }
   }
@@ -67,8 +63,8 @@ export const getAverage = (
   }
 
   return {
-    value: gradeRound(average, scale),
-    valueFormatted: gradeFormat(average, scale),
+    value: gradeRound(scale, average),
+    valueFormatted: gradeFormat(scale, average),
     status: gradeStatus(scale, average)
   }
 }

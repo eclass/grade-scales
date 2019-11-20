@@ -1,5 +1,20 @@
 /**
  * Formato retorno del calculo una nota.
+ *
+ * @sample
+ * ```json
+ * {
+ *    value: 2.6,
+ *    valueFormatted: "2.6",
+ *    status: {
+ *      id: 2,
+ *      name: "Reprobado",
+ *      detail: "La nota está reprobada",
+ *      style: "reprobate",
+ *      enabled: false
+ *    }
+ * }
+ * ```
  */
 export type QualificationType = {
   /**
@@ -70,12 +85,12 @@ export interface ScaleAttributes {
   /**
    * Nota mínima de aprobación.
    */
-  passingGrade?: number
+  passingGrade: number
 
   /**
    * Ponderación.
    */
-  passingPercentage?: number
+  passingPercentage: number
 
   /**
    * Tipo de redondeo.
@@ -85,22 +100,22 @@ export interface ScaleAttributes {
   /**
    * Caracter previo a la nota formateada.
    */
-  prepend?: string
+  prepend: string
 
   /**
    * Caracter posterior a la nota formateada.
    */
-  append?: string
+  append: string
 
   /**
    * Cantidad de decimales.
    */
-  decimals?: number
+  decimals: number
 
   /**
    * Caracter separador.
    */
-  decimalSeparator?: string
+  decimalSeparator: string
 }
 
 export type StatusReturn = {

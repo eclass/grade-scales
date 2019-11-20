@@ -2,24 +2,30 @@ import { gradeIsApproved } from './gradeIsApproved'
 import { ScaleAttributes, StatusReturn } from './types'
 
 /**
- * @example const checkStatus = gradeStatus(grade, scale)
+ * @example const checkStatus = gradeStatus(scale, grade)
  */
 export const gradeStatus = (
   scale: ScaleAttributes,
   grade?: number
 ): StatusReturn => {
-  const approved = gradeIsApproved(grade, scale)
+  /**
+   * Si la nota viene nula la marcamos como pendiente.
+   */
+  if (!grade) {
+    return {
+      id: 0,
+      name: 'Pendiente',
+      detail: '',
+      style: 'pending',
+      enabled: false
+    }
+  }
+
+  /**
+   * Calculamos si está aprobada y luego retornamos el estado.
+   */
+  const approved = gradeIsApproved(scale, grade)
   const status = new Map([
-    [
-      null,
-      {
-        id: 0,
-        name: 'Pendiente',
-        detail: '',
-        style: 'pending',
-        enabled: false
-      }
-    ],
     [
       true,
       {
@@ -42,5 +48,5 @@ export const gradeStatus = (
     ]
   ])
 
-  return grade ? status.get(approved) : status.get(null)
+  return status.get(approved)
 }

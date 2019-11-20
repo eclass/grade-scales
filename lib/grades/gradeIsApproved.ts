@@ -4,12 +4,12 @@ import { ScaleAttributes } from './types'
 /**
  * Recibe una nota y en base a la escala verifica si está aprobada o reprobada.
  *
- * @example const approved = gradeIsApproved(grade, scale)
+ * @example const approved = gradeIsApproved(scale, grade)
  */
 export const gradeIsApproved = (
-  grade: number,
-  scale: ScaleAttributes
+  scale: ScaleAttributes,
+  grade: number
 ): boolean => {
-  const rounded = gradeRound(grade, scale)
+  const rounded = gradeRound(scale, grade)
   return rounded >= scale.passingGrade
 }
