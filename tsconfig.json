@@ -11,7 +11,7 @@
       "esnext"
     ],
     "target": "ES2018",
-    "module": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "./dist",
     "rootDir": "./lib",
