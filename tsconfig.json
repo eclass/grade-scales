@@ -19,8 +19,5 @@
     "declarationMap": true,
     "inlineSourceMap": true,
     "inlineSources": true
-  },
-  "include": [
-    "lib/**/*.ts"
-  ]
+  }
 }
