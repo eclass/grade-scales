@@ -1,6 +1,6 @@
 {
   "name": "@eclass/grade-scales",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Módulo para calcular notas en base a una escala.",
   "main": "dist/index.js",
   "type": "commonjs",

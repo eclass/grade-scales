@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/eclass/grade-scales/compare/v1.2.0...v1.2.1) (2019-11-21)
+
+
+### Bug Fixes
+
+* **config:** tsconfig export module ([207344a](https://github.com/eclass/grade-scales/commit/207344a7eb077db56c4f0deb5d8c4dddb6cb4290))
+
 # [1.2.0](https://github.com/eclass/grade-scales/compare/v1.1.0...v1.2.0) (2019-11-20)
 
 
