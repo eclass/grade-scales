@@ -38,38 +38,33 @@ Las funciones principales nos permiten calcular las notas y formatearlas.
 En base a una escala se calcula la nota según los puntos totales y los obtenidos.
 ```js
   const grade = getGrade(scale, 10, 6)
-  console.log({ grade })
-  `
-    { grade: 4.6 }
-  `
+  // output: console.log({ grade })
+  { grade: 4.6 }
 ```
 
 ## getGradeFormatted(): Object
 Devuelve la nota formateada con el estado si está "Aprobada" o "Reprobada"
 ```js 
   const grade = getGradeQualification(scale, 10, 6)
-  console.log({ grade })
-  `{
-    grade: {
-      value: 4.6,
-      valueFormatted: '4,6',
-      status: {
-        id: 1,
-        name: 'Aprobado',
-        detail: 'La nota está aprobada',
-        style: 'approved',
-        enabled: true
-      }
+  // output: console.log({ grade })
+  {
+    value: 4.6,
+    valueFormatted: '4,6',
+    status: {
+      id: 1,
+      name: 'Aprobado',
+      detail: 'La nota está aprobada',
+      style: 'approved',
+      enabled: true
     }
-  }`
+  }
 ```
 
 ## getAverage() : number
 Según la escala calcula el promedio en base a un set de notas.
 ```js
   const average = getAverage(scale, { grades: [3, 4, 6] })
-  console.log({ average })
-  `
+  // output: console.log({ average })
   {
     average: {
       value: 4.7,
@@ -83,7 +78,6 @@ Según la escala calcula el promedio en base a un set de notas.
       }
     }
   }
-  `
 ```
 Además puede recibir un arreglo de valores con las ponderaciones para calcular el promedio de notas.
 ```js
@@ -91,8 +85,8 @@ Además puede recibir un arreglo de valores con las ponderaciones para calcular 
     grades: [3, 4, 7],
     weights: [20, 30, 50]
   })
-  `
-  {
+  // output
+  {: console.log({ // })
     average: {
       value: 5.3,
       valueFormatted: '5,3',
@@ -105,7 +99,6 @@ Además puede recibir un arreglo de valores con las ponderaciones para calcular 
       }
     }
   }
-  `
 ```
 
 ## convertToScale() : number
@@ -126,8 +119,31 @@ Transforma una nota de una escala a otra.
   }
 
   const converted = convertToScale({ scale, grade: 4.8 }, newScale)
-  console.log({ converted })
-  `{ converted: 64 }`
+  // output: console.log({ converted })
+  { converted: 64 }
+```
+
+## getGrades() : Array<GradeList>
+Calcula todas las notas de una escala según el puntaje máximo
+```js
+  const grades = getGrades(scale, 1, 0)
+  // output: console.log({ grades })
+  [
+    {
+      points: { obtained: 0, total: 1 },
+      grade: 1,
+      qualification: { value: 1, valueFormatted: '1', status: [Object] },
+      isApproved: false,
+      formatted: '1'
+    },
+    {
+      points: { obtained: 1, total: 1 },
+      grade: 7,
+      qualification: { value: 7, valueFormatted: '7', status: [Object] },
+      isApproved: true,
+      formatted: '7'
+    }
+  ]
 ```
 
 # Otras funciones
@@ -136,24 +152,24 @@ Transforma una nota de una escala a otra.
 Formatea una nota según el estilo de la escala.
 ```js
   const format = gradeFormat(scale, 2.5)
-  console.log({ format })
-  `{ format: '2,5' }`
+  // output: console.log({ format })
+  { format: '2,5' }
 ```
 
 ## gradeIsApproved() : boolean
 Calcula la nota si está aprobada o reprobada
 ```js
   const isApproved = gradeIsApproved(scale, 5)
-  console.log({ isApproved })
-  `{ isApproved: true }`
+  // output: console.log({ isApproved })
+  { isApproved: true }
 ```
 
 ## gradeRound() : number
 Calcula la nota si está aprobada o reprobada
 ```js
   const rounded = gradeRound(scale, 5.3551)
-  console.log({ rounded })
-  `{ rounded: 5.4 }`
+  // output: console.log({ rounded })
+  { rounded: 5.4 }
 ```
 
 ## gradeStatus(): QualificationType
@@ -161,8 +177,7 @@ Calcula la nota si está aprobada o reprobada
 Calcula la nota si está aprobada o reprobada con formato
 ```js
   const status = gradeStatus(scale, 4.3)
-  console.log({ status })
-  `
+  // output: console.log({ status })
   {
     status: {
       id: 1,
@@ -172,7 +187,6 @@ Calcula la nota si está aprobada o reprobada con formato
       enabled: true
     }
   }
-  `
 ```
 
 ## License

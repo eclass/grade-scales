@@ -1,3 +1,15 @@
+export type Scores = {
+  /**
+   * Puntos totales.
+   */
+  total: number
+
+  /**
+   * Puntos obtenidos.
+   */
+  obtained: number
+}
+
 /**
  * Formato retorno del calculo una nota.
  *

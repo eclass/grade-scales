@@ -1,6 +1,7 @@
 // Componentes
 export * from './getAverage'
 export * from './getGrade'
+export * from './getGrades'
 export * from './getGradeFormatted'
 export * from './convertToScale'
 
