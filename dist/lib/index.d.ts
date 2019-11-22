@@ -1,7 +1,6 @@
 export * from './getAverage';
 export * from './getGrade';
 export * from './getGradeFormatted';
-export * from './convertToScale';
 export * from './grades/gradeFormat';
 export * from './grades/gradeIsApproved';
 export * from './grades/gradeRound';

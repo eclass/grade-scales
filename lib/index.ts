@@ -2,6 +2,7 @@
 export * from './getAverage'
 export * from './getGrade'
 export * from './getGradeFormatted'
+export * from './convertToScale'
 
 // Funciones de Notas
 export * from './grades/gradeFormat'

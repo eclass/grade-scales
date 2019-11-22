@@ -147,3 +147,15 @@ export type StatusReturn = {
    */
   enabled: boolean
 }
+
+export type AverageParams = {
+  /**
+   * Notas.
+   */
+  grades: number[]
+
+  /**
+   * Ponderaciones.
+   */
+  weights?: number[]
+}

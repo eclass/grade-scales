@@ -32,54 +32,147 @@ const scale = {
 ```
 
 # eClass - Grade Scales
+Las funciones principales nos permiten calcular las notas y formatearlas.
 
 ## getGrade() : number
 En base a una escala se calcula la nota según los puntos totales y los obtenidos.
 ```js
-  const grade = getGrade(scale, 10, 5)
+  const grade = getGrade(scale, 10, 6)
+  console.log({ grade })
+  `
+    { grade: 4.6 }
+  `
 ```
 
 ## getGradeFormatted(): Object
 Devuelve la nota formateada con el estado si está "Aprobada" o "Reprobada"
 ```js 
-  const grade = getGradeQualification(scale, 5, 3)
+  const grade = getGradeQualification(scale, 10, 6)
+  console.log({ grade })
+  `{
+    grade: {
+      value: 4.6,
+      valueFormatted: '4,6',
+      status: {
+        id: 1,
+        name: 'Aprobado',
+        detail: 'La nota está aprobada',
+        style: 'approved',
+        enabled: true
+      }
+    }
+  }`
 ```
 
 ## getAverage() : number
 Según la escala calcula el promedio en base a un set de notas.
 ```js
   const average = getAverage(scale, { grades: [3, 4, 6] })
+  console.log({ average })
+  `
+  {
+    average: {
+      value: 4.7,
+      valueFormatted: '4,7',
+      status: {
+        id: 1,
+        name: 'Aprobado',
+        detail: 'La nota está aprobada',
+        style: 'approved',
+        enabled: true
+      }
+    }
+  }
+  `
 ```
 Además puede recibir un arreglo de valores con las ponderaciones para calcular el promedio de notas.
 ```js
   const average = getAverage(scale, { 
-    grades: [3, 4, 6],
-    weights: [20, 40, 40]
+    grades: [3, 4, 7],
+    weights: [20, 30, 50]
   })
+  `
+  {
+    average: {
+      value: 5.3,
+      valueFormatted: '5,3',
+      status: {
+        id: 1,
+        name: 'Aprobado',
+        detail: 'La nota está aprobada',
+        style: 'approved',
+        enabled: true
+      }
+    }
+  }
+  `
 ```
 
-## isApproved() : boolean
-_** Pendiente_: Calcula la nota si está aprobada o reprobada
+## convertToScale() : number
+Transforma una nota de una escala a otra.
 ```js
-  const isApproved = isApproved(scale, 5)
-```
-
-## isApprovedStatus(): Object
-_** Pendiente_: Calcula la nota si está aprobada o reprobada con formato
-```js
-  const isApproved = isApproved(scale, 5)
-```
-
-
-## gradeConvert() : number
-_** Pendiente_: Pasar una nota a otra escala de nota
-```js
-  const origin = {
-    scale: {},
-    grade: 4
+  const newScale = {
+    name: 'Porcentaje (1-100%, aprobación 60%, nota 70)',
+    keyname: 'Porcentaje_1-100_60',
+    min: 1,
+    max: 100,
+    passingGrade: 70,
+    passingPercentage: 60,
+    roundType: 'round',
+    prepend: '',
+    append: '%',
+    decimals: 0,
+    decimalSeparator: ','
   }
 
-  const converted = convertGrade(origin, scale)
+  const converted = convertToScale({ scale, grade: 4.8 }, newScale)
+  console.log({ converted })
+  `{ converted: 64 }`
+```
+
+# Otras funciones
+
+## gradeFormat(): string
+Formatea una nota según el estilo de la escala.
+```js
+  const format = gradeFormat(scale, 2.5)
+  console.log({ format })
+  `{ format: '2,5' }`
+```
+
+## gradeIsApproved() : boolean
+Calcula la nota si está aprobada o reprobada
+```js
+  const isApproved = gradeIsApproved(scale, 5)
+  console.log({ isApproved })
+  `{ isApproved: true }`
+```
+
+## gradeRound() : number
+Calcula la nota si está aprobada o reprobada
+```js
+  const rounded = gradeRound(scale, 5.3551)
+  console.log({ rounded })
+  `{ rounded: 5.4 }`
+```
+
+## gradeStatus(): QualificationType
+
+Calcula la nota si está aprobada o reprobada con formato
+```js
+  const status = gradeStatus(scale, 4.3)
+  console.log({ status })
+  `
+  {
+    status: {
+      id: 1,
+      name: 'Aprobado',
+      detail: 'La nota está aprobada',
+      style: 'approved',
+      enabled: true
+    }
+  }
+  `
 ```
 
 ## License
