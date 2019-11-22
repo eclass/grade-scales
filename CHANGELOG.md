@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/eclass/grade-scales/compare/v1.2.2...v1.3.0) (2019-11-22)
+
+
+### Features
+
+* **convert:** agregamos funcion para convertir notas ([62891df](https://github.com/eclass/grade-scales/commit/62891df6e0bfda1747744f74fb55819546d4533b))
+
 ## [1.2.2](https://github.com/eclass/grade-scales/compare/v1.2.1...v1.2.2) (2019-11-21)
 
 
