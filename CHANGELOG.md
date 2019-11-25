@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/eclass/grade-scales/compare/v1.4.0...v1.5.0) (2019-11-25)
+
+
+### Features
+
+* **grade:** agregamos metodo para dar formato a nota ([5f81fe0](https://github.com/eclass/grade-scales/commit/5f81fe06f02a25cb8c3abd1fed3d194cae5f55a6))
+
 # [1.4.0](https://github.com/eclass/grade-scales/compare/v1.3.0...v1.4.0) (2019-11-22)
 
 
