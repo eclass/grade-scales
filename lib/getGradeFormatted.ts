@@ -21,3 +21,20 @@ export const getGradeQualification = (
     status: gradeStatus(scale, grade)
   }
 }
+
+/**
+ * Formatea el objeto con la nota.
+ *
+ * @example
+ *  const grade = getQualification(scale, 5.7)
+ */
+export const getQualification = (
+  scale: ScaleAttributes,
+  grade: number
+): QualificationType => {
+  return {
+    value: gradeRound(scale, grade),
+    valueFormatted: gradeFormat(scale, grade),
+    status: gradeStatus(scale, grade)
+  }
+}
