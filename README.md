@@ -59,6 +59,23 @@ Devuelve la nota formateada con el estado si está "Aprobada" o "Reprobada"
     }
   }
 ```
+## getQualification(): Object
+Si tenemos la nota ya calculada podemos darle formato con la función
+```js 
+  const qualification = getQualification(scale, 5.6)
+  // output: console.log({ qualification })
+  {
+    value: 5.6,
+    valueFormatted: '5,6',
+    status: {
+      id: 1,
+      name: 'Aprobado',
+      detail: 'La nota está aprobada',
+      style: 'approved',
+      enabled: true
+    }
+  }
+```
 
 ## getAverage() : number
 Según la escala calcula el promedio en base a un set de notas.

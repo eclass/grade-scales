@@ -6,4 +6,11 @@ import { ScaleAttributes, QualificationType } from './grades/types';
  *  const grade = getGradeQualification(scale, 5, 3)
  */
 export declare const getGradeQualification: (scale: ScaleAttributes, total: number, obtained: number) => QualificationType;
+/**
+ * Formatea el objeto con la nota.
+ *
+ * @example
+ *  const grade = getQualification(scale, 5.7)
+ */
+export declare const getQualification: (scale: ScaleAttributes, grade: number) => QualificationType;
 //# sourceMappingURL=getGradeFormatted.d.ts.map
