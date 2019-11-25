@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/eclass/grade-scales/compare/v1.3.0...v1.4.0) (2019-11-22)
+
+
+### Features
+
+* **grades:** agregamos listado de todas las notas ([797a2e0](https://github.com/eclass/grade-scales/commit/797a2e03ffb061d89c288d0a5e7f8035d6d70f24))
+
 # [1.3.0](https://github.com/eclass/grade-scales/compare/v1.2.2...v1.3.0) (2019-11-22)
 
 
