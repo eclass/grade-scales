@@ -46,7 +46,6 @@
     "eslint-plugin-array-func": "3.1.3",
     "eslint-plugin-eslint-comments": "3.1.2",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jsdoc": "18.1.5",
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-security": "1.4.0",
@@ -61,40 +60,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "@eclass",
-      "plugin:@typescript-eslint/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "rules": {
-      "require-jsdoc": 0,
-      "valid-jsdoc": 0,
-      "jsdoc/check-alignment": 0,
-      "jsdoc/check-examples": 0,
-      "jsdoc/check-indentation": 0,
-      "jsdoc/check-param-names": 0,
-      "jsdoc/check-syntax": 0,
-      "jsdoc/check-tag-names": 0,
-      "jsdoc/check-types": 0,
-      "jsdoc/implements-on-classes": 0,
-      "jsdoc/match-description": 0,
-      "jsdoc/newline-after-description": 0,
-      "jsdoc/no-types": 0,
-      "jsdoc/no-undefined-types": 0,
-      "jsdoc/require-description": 0,
-      "jsdoc/require-description-complete-sentence": 0,
-      "jsdoc/require-example": 0,
-      "jsdoc/require-hyphen-before-param-description": 0,
-      "jsdoc/require-jsdoc": 0,
-      "jsdoc/require-param": 0,
-      "jsdoc/require-param-description": 0,
-      "jsdoc/require-param-name": 0,
-      "jsdoc/require-param-type": 0,
-      "jsdoc/require-returns": 0,
-      "jsdoc/require-returns-check": 0,
-      "jsdoc/require-returns-description": 0,
-      "jsdoc/require-returns-type": 0,
-      "jsdoc/valid-types": 0
-    }
+      "@eclass/eslint-config/typescript"
+    ]
   },
   "eslintIgnore": [
     "coverage",
