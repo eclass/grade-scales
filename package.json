@@ -10,7 +10,8 @@
     "format": "prettier-standard 'lib/**/*.ts'",
     "lint": "eslint 'lib/**/*.ts' --fix",
     "test": "cd test && npm run test",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
