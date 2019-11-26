@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/eclass/grade-scales/compare/v1.5.0...v1.5.1) (2019-11-25)
+
+
+### Bug Fixes
+
+* **dist:** compilamos y subimos nueva versión ([7d23c97](https://github.com/eclass/grade-scales/commit/7d23c97c25b8db52880ce318b482c65c59f720a5))
+
 # [1.5.0](https://github.com/eclass/grade-scales/compare/v1.4.0...v1.5.0) (2019-11-25)
 
 
