@@ -94,6 +94,9 @@
   "renovate": {
     "extends": [
       "@eclass:js-lib"
+    ],
+    "assignees": [
+      "SeGonzalezR"
     ]
   },
   "release": {
