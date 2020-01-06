@@ -7,7 +7,7 @@ import { ScaleAttributes } from './types'
  */
 export const gradeRound = (scale: ScaleAttributes, grade: number): number => {
   try {
-    let rounded: any
+    let rounded: number | string
     if (scale.decimals > 0) {
       rounded = Number(
         Math.round(Number(grade + 'e' + scale.decimals)) + 'e-' + scale.decimals
