@@ -13,9 +13,10 @@ export const gradeFormat = (scale: ScaleAttributes, grade: number): string => {
   if (round.length === 1) {
     round = `${round}.0`
   }
+
   return [
     scale.prepend,
-    String(round).replace('.', scale.decimalSeparator),
+    round.replace('.', scale.decimalSeparator),
     scale.append
   ].join('')
 }
