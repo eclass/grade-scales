@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/eclass/grade-scales/compare/v1.5.2...v1.5.3) (2020-01-06)
+
+
+### Bug Fixes
+
+* **format:** scale.append === '' ([562c324](https://github.com/eclass/grade-scales/commit/562c324e5384161657d74936587fc95f81ca519f))
+
 ## [1.5.2](https://github.com/eclass/grade-scales/compare/v1.5.1...v1.5.2) (2020-01-06)
 
 
