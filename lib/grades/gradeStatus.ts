@@ -6,7 +6,8 @@ import { ScaleAttributes, StatusReturn } from './types'
  */
 export const gradeStatus = (
   scale: ScaleAttributes,
-  grade?: number
+  grade?: number,
+  isApproved = true
 ): StatusReturn => {
   /**
    * Si la nota viene nula la marcamos como pendiente.
@@ -24,7 +25,7 @@ export const gradeStatus = (
   /**
    * Calculamos si está aprobada y luego retornamos el estado.
    */
-  const approved = gradeIsApproved(scale, grade)
+  const approved = isApproved ? gradeIsApproved(scale, grade) : isApproved
   const status = new Map([
     [
       true,

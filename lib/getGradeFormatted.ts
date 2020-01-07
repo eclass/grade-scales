@@ -26,15 +26,16 @@ export const getGradeQualification = (
  * Formatea el objeto con la nota.
  *
  * @example
- *  const grade = getQualification(scale, 5.7)
+ *  const grade = getQualification(scale, 5.7, true | false)
  */
 export const getQualification = (
   scale: ScaleAttributes,
-  grade: number
+  grade: number,
+  approved = true
 ): QualificationType => {
   return {
     value: gradeRound(scale, grade),
     valueFormatted: gradeFormat(scale, grade),
-    status: gradeStatus(scale, grade)
+    status: gradeStatus(scale, grade, approved)
   }
 }
