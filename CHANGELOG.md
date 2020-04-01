@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/eclass/grade-scales/compare/v1.5.3...v1.5.4) (2020-01-07)
+
+
+### Bug Fixes
+
+* **status:** forzamos la nota reprobada con un parametro ([d31e683](https://github.com/eclass/grade-scales/commit/d31e6833e37e20965fa3f6bb7ceae2219e002178))
+
 ## [1.5.3](https://github.com/eclass/grade-scales/compare/v1.5.2...v1.5.3) (2020-01-06)
 
 
