@@ -53,7 +53,7 @@
     "eslint-plugin-standard": "4.0.1",
     "husky": "4.2.5",
     "lint-staged": "10.2.6",
-    "prettier-standard": "16.2.1",
+    "prettier-standard": "16.3.0",
     "semantic-release": "17.0.7",
     "ts-node": "8.10.1",
     "typescript": "3.8.3"
