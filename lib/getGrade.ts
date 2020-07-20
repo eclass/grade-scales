@@ -1,5 +1,5 @@
 import { gradeRound } from './grades'
-import { ScaleAttributes } from './grades/types'
+import { ScaleAttributes } from './types'
 
 /**
  * Hace el cálculo de la nota en base al puntaje obtenido y el total con la Escala de notas

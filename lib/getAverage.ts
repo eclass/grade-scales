@@ -1,9 +1,5 @@
 import { gradeFormat, gradeRound, gradeStatus } from './grades'
-import {
-  ScaleAttributes,
-  QualificationType,
-  AverageParams
-} from './grades/types'
+import { ScaleAttributes, QualificationType, AverageParams } from './types'
 
 /**
  * Calcula el promedio de una o mas notas, con sus ponderaciones.

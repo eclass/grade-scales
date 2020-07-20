@@ -1,5 +1,5 @@
 import { getGrade } from './getGrade'
-import { ScaleAttributes, QualificationType } from './grades/types'
+import { ScaleAttributes, QualificationType } from './types'
 
 import { gradeRound, gradeFormat, gradeStatus } from './grades'
 

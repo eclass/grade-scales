@@ -1,5 +1,5 @@
 import { gradeRound } from './gradeRound'
-import { ScaleAttributes } from './types'
+import { ScaleAttributes } from '../types'
 
 /**
  * Formatea una nota según la escala recibida por parámetro.

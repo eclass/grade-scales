@@ -12,4 +12,4 @@ export * from './grades/gradeRound'
 export * from './grades/gradeStatus'
 
 // Types definiciones
-export * from './grades/types'
+export * from '../lib/types'

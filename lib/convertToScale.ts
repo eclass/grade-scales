@@ -1,4 +1,4 @@
-import { ScaleAttributes } from './grades/types'
+import { ScaleAttributes } from './types'
 import { gradeRound } from './grades/'
 
 type ConvertAttributes = {

@@ -1,4 +1,4 @@
-import { ScaleAttributes, QualificationType, Scores } from './grades/types'
+import { ScaleAttributes, QualificationType, Scores } from './types'
 
 import { getGrade, gradeFormat, getGradeQualification } from './'
 import { gradeIsApproved } from './grades'

@@ -1,5 +1,5 @@
 import { gradeIsApproved } from './gradeIsApproved'
-import { ScaleAttributes, StatusReturn } from './types'
+import { ScaleAttributes, StatusReturn } from '../types'
 
 /**
  * @example const checkStatus = gradeStatus(scale, grade)

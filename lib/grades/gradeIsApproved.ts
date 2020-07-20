@@ -1,5 +1,5 @@
 import { gradeRound } from './gradeRound'
-import { ScaleAttributes } from './types'
+import { ScaleAttributes } from '../types'
 
 /**
  * Recibe una nota y en base a la escala verifica si está aprobada o reprobada.

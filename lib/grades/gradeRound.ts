@@ -1,4 +1,4 @@
-import { ScaleAttributes } from './types'
+import { ScaleAttributes } from '../types'
 
 /**
  * Recibe una nota y la redondea segun el formato de la escala.
