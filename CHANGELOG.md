@@ -1,3 +1,11 @@
+## [1.5.5](https://github.com/eclass/grade-scales/compare/v1.5.4...v1.5.5) (2020-07-20)
+
+
+### Bug Fixes
+
+* **average:** types definition ([3cd6aaf](https://github.com/eclass/grade-scales/commit/3cd6aaf449663f791abfa37c7d62ddef822970a6))
+* **types:** exportamos definiciones ([1af3e1b](https://github.com/eclass/grade-scales/commit/1af3e1b5311e364682f185c767d861b81559941c))
+
 ## [1.5.4](https://github.com/eclass/grade-scales/compare/v1.5.3...v1.5.4) (2020-01-07)
 
 
