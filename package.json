@@ -4,7 +4,7 @@
   "description": "Módulo para calcular notas en base a una escala.",
   "main": "dist/index.js",
   "type": "commonjs",
-  "types": "./dist/index.d.ts",
+  "types": "./lib/types.d.ts",
   "scripts": {
     "build": "tsc",
     "format": "prettier-standard 'lib/**/*.ts'",
