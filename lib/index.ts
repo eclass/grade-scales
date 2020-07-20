@@ -10,6 +10,3 @@ export * from './grades/gradeFormat'
 export * from './grades/gradeIsApproved'
 export * from './grades/gradeRound'
 export * from './grades/gradeStatus'
-
-// Types definiciones
-export * from '../lib/types'
