@@ -1,3 +1,11 @@
+## [1.5.7](https://github.com/eclass/grade-scales/compare/v1.5.6...v1.5.7) (2020-07-20)
+
+
+### Bug Fixes
+
+* **types:** fix path ([0020a1e](https://github.com/eclass/grade-scales/commit/0020a1eb051723888beaa0cfd5f6096053fad5fd))
+* **types:** quitamos export de lib/index.ts ([787808c](https://github.com/eclass/grade-scales/commit/787808ccf1e2c641480e03e846230307fed335d2))
+
 ## [1.5.6](https://github.com/eclass/grade-scales/compare/v1.5.5...v1.5.6) (2020-07-20)
 
 
