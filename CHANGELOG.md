@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/eclass/grade-scales/compare/v1.5.5...v1.5.6) (2020-07-20)
+
+
+### Bug Fixes
+
+* **types:** correccion types y job ci test ([26a792f](https://github.com/eclass/grade-scales/commit/26a792f52d657c4a7aacebd9a82f1dad5fad3845))
+
 ## [1.5.5](https://github.com/eclass/grade-scales/compare/v1.5.4...v1.5.5) (2020-07-20)
 
 
