@@ -44,7 +44,7 @@ export const getAverage = (
   let average = 0
   const sumAverages = weights.reduce((acc, weight) => acc + weight, 0)
   grades.forEach((grade, index) => {
-    average += grade * (weights[index] / sumAverages)
+    average += grade * (weights[`${index}`] / sumAverages)
   })
 
   /**

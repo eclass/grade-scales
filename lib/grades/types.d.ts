@@ -16,7 +16,7 @@ export type Scores = {
  * @sample
  * ```json
  * {
- *    value: 2.6,
+ *    value: "2.6",
  *    valueFormatted: "2.6",
  *    status: {
  *      id: 2,
@@ -31,6 +31,7 @@ export type Scores = {
 export type QualificationType = {
   /**
    * Nota redondeada.
+   * - Luego se ocupa como string en la aplicación.
    */
   value: number
 
