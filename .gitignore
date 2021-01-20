@@ -61,4 +61,4 @@ typings/
 .next
 
 # typescript dist directory
-dist
+# dist
