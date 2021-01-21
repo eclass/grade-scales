@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.gradeIsApproved = void 0;
+const gradeRound_1 = require("./gradeRound");
+/**
+ * Recibe una nota y en base a la escala verifica si está aprobada o reprobada.
+ *
+ * @example const approved = gradeIsApproved(scale, grade)
+ */
+const gradeIsApproved = (scale, grade) => {
+    const rounded = gradeRound_1.gradeRound(scale, grade);
+    return rounded >= scale.passingGrade;
+};
+exports.gradeIsApproved = gradeIsApproved;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZ3JhZGVJc0FwcHJvdmVkLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vbGliL2dyYWRlcy9ncmFkZUlzQXBwcm92ZWQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsNkNBQXlDO0FBR3pDOzs7O0dBSUc7QUFDSSxNQUFNLGVBQWUsR0FBRyxDQUM3QixLQUFzQixFQUN0QixLQUFhLEVBQ0osRUFBRTtJQUNYLE1BQU0sT0FBTyxHQUFHLHVCQUFVLENBQUMsS0FBSyxFQUFFLEtBQUssQ0FBQyxDQUFBO0lBQ3hDLE9BQU8sT0FBTyxJQUFJLEtBQUssQ0FBQyxZQUFZLENBQUE7QUFDdEMsQ0FBQyxDQUFBO0FBTlksUUFBQSxlQUFlLG1CQU0zQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGdyYWRlUm91bmQgfSBmcm9tICcuL2dyYWRlUm91bmQnXG5pbXBvcnQgeyBTY2FsZUF0dHJpYnV0ZXMgfSBmcm9tICcuLi90eXBlcydcblxuLyoqXG4gKiBSZWNpYmUgdW5hIG5vdGEgeSBlbiBiYXNlIGEgbGEgZXNjYWxhIHZlcmlmaWNhIHNpIGVzdMOhIGFwcm9iYWRhIG8gcmVwcm9iYWRhLlxuICpcbiAqIEBleGFtcGxlIGNvbnN0IGFwcHJvdmVkID0gZ3JhZGVJc0FwcHJvdmVkKHNjYWxlLCBncmFkZSlcbiAqL1xuZXhwb3J0IGNvbnN0IGdyYWRlSXNBcHByb3ZlZCA9IChcbiAgc2NhbGU6IFNjYWxlQXR0cmlidXRlcyxcbiAgZ3JhZGU6IG51bWJlclxuKTogYm9vbGVhbiA9PiB7XG4gIGNvbnN0IHJvdW5kZWQgPSBncmFkZVJvdW5kKHNjYWxlLCBncmFkZSlcbiAgcmV0dXJuIHJvdW5kZWQgPj0gc2NhbGUucGFzc2luZ0dyYWRlXG59XG4iXX0=

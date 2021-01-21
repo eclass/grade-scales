@@ -12,7 +12,7 @@ export const gradeStatus = (
   /**
    * Si la nota viene nula la marcamos como pendiente.
    */
-  if (!grade) {
+  if (!grade && isApproved) {
     return {
       id: 0,
       name: 'Pendiente',

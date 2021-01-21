@@ -1,0 +1,6 @@
+{
+  "lib/**/*.ts": [
+    "eslint --fix",
+    "prettier-standard"
+  ]
+}
