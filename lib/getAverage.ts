@@ -8,12 +8,12 @@ import { ScaleAttributes, QualificationType, AverageParams } from './types'
  */
 export const getAverage = (
   scale: ScaleAttributes,
-  params: AverageParams
+  params: AverageParams,
 ): QualificationType => {
   /**
    * Redondeamos las notas.
    */
-  const grades = params.grades.map(grade => gradeRound(scale, grade))
+  const grades = params.grades.map((grade) => gradeRound(scale, grade))
 
   /**
    * - Si vienen las ponderaciones entonces las usamos para calcular el promedio
@@ -21,7 +21,7 @@ export const getAverage = (
    */
   const weights = params.weights
     ? params.weights
-    : grades.map(grade => 100 / grades.length)
+    : grades.map(() => 100 / grades.length)
 
   /**
    * Si no hay notas entonces retornamos la nota mínima de la escala.
@@ -30,7 +30,7 @@ export const getAverage = (
     return {
       value: gradeRound(scale, scale.min),
       valueFormatted: gradeFormat(scale, scale.min),
-      status: gradeStatus(scale, null)
+      status: gradeStatus(scale, null),
     }
   }
 
@@ -53,6 +53,6 @@ export const getAverage = (
   return {
     value: gradeRound(scale, average),
     valueFormatted: gradeFormat(scale, average),
-    status: gradeStatus(scale, average)
+    status: gradeStatus(scale, average),
   }
 }

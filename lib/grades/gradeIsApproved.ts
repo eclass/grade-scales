@@ -8,7 +8,7 @@ import { ScaleAttributes } from '../types'
  */
 export const gradeIsApproved = (
   scale: ScaleAttributes,
-  grade: number
+  grade: number,
 ): boolean => {
   const rounded = gradeRound(scale, grade)
   return rounded >= scale.passingGrade

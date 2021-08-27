@@ -39,7 +39,7 @@ type GradeList = {
 export const getGrades = (
   scale: ScaleAttributes,
   total: number,
-  minPoints = 0
+  minPoints = 0,
 ): Array<GradeList> => {
   if (minPoints > total) {
     throw new Error('Puntaje mínimo no puede ser mayor al máximo.')
@@ -54,12 +54,12 @@ export const getGrades = (
     grades.push({
       points: {
         obtained: minPoints,
-        total
+        total,
       },
       grade,
       qualification: getGradeQualification(scale, total, minPoints),
       isApproved: gradeIsApproved(scale, grade),
-      formatted: gradeFormat(scale, grade)
+      formatted: gradeFormat(scale, grade),
     })
   }
 
