@@ -1,3 +1,11 @@
+## [1.5.8](https://github.com/eclass/grade-scales/compare/v1.5.7...v1.5.8) (2021-08-27)
+
+
+### Bug Fixes
+
+* **package:** separamos package en .*rc.json ([#92](https://github.com/eclass/grade-scales/issues/92)) ([aedea26](https://github.com/eclass/grade-scales/commit/aedea26cb3b0d58588db6c580d837f4efd630d0f))
+* **types:** change path to dist/index.d.tsx ([79d7b11](https://github.com/eclass/grade-scales/commit/79d7b116da9425a6cb2a924a84a6b8ab6410c1cd))
+
 ## [1.5.7](https://github.com/eclass/grade-scales/compare/v1.5.6...v1.5.7) (2020-07-20)
 
 
