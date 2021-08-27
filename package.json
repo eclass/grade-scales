@@ -9,6 +9,7 @@
     "build": "tsc",
     "format": "prettier --write 'lib/**/*.ts'",
     "lint": "eslint 'lib/**/*.ts' --fix",
+    "lint:check": "eslint 'lib/**/*.ts'",
     "test": "echo \"Nothing found tests.\"",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
