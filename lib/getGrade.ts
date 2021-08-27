@@ -9,7 +9,7 @@ import { ScaleAttributes } from './types'
 export const calcGrade = (
   scale: ScaleAttributes,
   total: number,
-  obtained: number
+  obtained: number,
 ): number => {
   let grade = 0
   if (scale.passingPercentage > 0) {
@@ -45,7 +45,7 @@ export const calcGrade = (
 export const getGrade = (
   scale: ScaleAttributes,
   total: number,
-  obtained: number
+  obtained: number,
 ): number => {
   if (obtained >= total) {
     return scale.max

@@ -7,7 +7,7 @@ import { ScaleAttributes, StatusReturn } from '../types'
 export const gradeStatus = (
   scale: ScaleAttributes,
   grade?: number,
-  isApproved = true
+  isApproved = true,
 ): StatusReturn => {
   /**
    * Si la nota viene nula la marcamos como pendiente.
@@ -18,7 +18,7 @@ export const gradeStatus = (
       name: 'Pendiente',
       detail: '',
       style: 'pending',
-      enabled: false
+      enabled: false,
     }
   }
 
@@ -34,8 +34,8 @@ export const gradeStatus = (
         name: 'Aprobado',
         detail: 'La nota está aprobada',
         style: 'approved',
-        enabled: true
-      }
+        enabled: true,
+      },
     ],
     [
       false,
@@ -44,9 +44,9 @@ export const gradeStatus = (
         name: 'Reprobado',
         detail: 'La nota está reprobada',
         style: 'reprobate',
-        enabled: false
-      }
-    ]
+        enabled: false,
+      },
+    ],
   ])
 
   return status.get(approved)

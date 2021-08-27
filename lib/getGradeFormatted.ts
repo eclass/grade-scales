@@ -12,13 +12,13 @@ import { gradeRound, gradeFormat, gradeStatus } from './grades'
 export const getGradeQualification = (
   scale: ScaleAttributes,
   total: number,
-  obtained: number
+  obtained: number,
 ): QualificationType => {
   const grade = getGrade(scale, total, obtained)
   return {
     value: gradeRound(scale, grade),
     valueFormatted: gradeFormat(scale, grade),
-    status: gradeStatus(scale, grade)
+    status: gradeStatus(scale, grade),
   }
 }
 
@@ -31,11 +31,11 @@ export const getGradeQualification = (
 export const getQualification = (
   scale: ScaleAttributes,
   grade: number,
-  approved = true
+  approved = true,
 ): QualificationType => {
   return {
     value: gradeRound(scale, grade),
     valueFormatted: gradeFormat(scale, grade),
-    status: gradeStatus(scale, grade, approved)
+    status: gradeStatus(scale, grade, approved),
   }
 }

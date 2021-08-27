@@ -42,7 +42,7 @@ type ConvertAttributes = {
  */
 export const convertToScale = (
   convert: ConvertAttributes,
-  scale: ScaleAttributes
+  scale: ScaleAttributes,
 ): number => {
   // Redondeamos nota actual.
   const grade = gradeRound(convert.scale, convert.grade)

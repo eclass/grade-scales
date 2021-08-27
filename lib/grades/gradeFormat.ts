@@ -17,6 +17,6 @@ export const gradeFormat = (scale: ScaleAttributes, grade: number): string => {
   return [
     scale.prepend,
     round.replace('.', scale.decimalSeparator),
-    scale.append
+    scale.append,
   ].join('')
 }
