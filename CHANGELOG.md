@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/eclass/grade-scales/compare/v1.5.8...v1.5.9) (2021-08-30)
+
+
+### Bug Fixes
+
+* **types:** corregimos types y mini orden en archivos ([d5877fb](https://github.com/eclass/grade-scales/commit/d5877fb26783659e2106f5f30fbf710120fb5a20))
+
 ## [1.5.8](https://github.com/eclass/grade-scales/compare/v1.5.7...v1.5.8) (2021-08-27)
 
 
