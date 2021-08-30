@@ -26,7 +26,7 @@ export const gradeStatus = (
    * Calculamos si está aprobada y luego retornamos el estado.
    */
   const approved = isApproved ? gradeIsApproved(scale, grade) : isApproved
-  const status = new Map([
+  const status: Map<boolean, StatusReturn> = new Map([
     [
       true,
       {

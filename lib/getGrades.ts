@@ -1,34 +1,6 @@
-import { ScaleAttributes, QualificationType, Scores } from './types'
-
-import { getGrade, gradeFormat, getGradeQualification } from './'
-import { gradeIsApproved } from './grades'
-
-type GradeList = {
-  /**
-   * Puntos evaluados.
-   */
-  points: Scores
-
-  /**
-   * Nota calculada.
-   */
-  grade: number
-
-  /**
-   * Nota formateada y el estado
-   */
-  qualification: QualificationType
-
-  /**
-   * Estado aprobada o reprobada.
-   */
-  isApproved: boolean
-
-  /**
-   * Nota formateada segun la escala.
-   */
-  formatted: string
-}
+import { ScaleAttributes, GradeList } from './types'
+import { getGrade, gradeFormat, getGradeQualification } from './index'
+import { gradeIsApproved } from './grades/'
 
 /**
  * Calcula todas las notas según el total y el inicio (minPoints)

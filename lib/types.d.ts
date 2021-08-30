@@ -172,3 +172,30 @@ export type AverageParams = {
    */
   weights?: number[]
 }
+
+export type GradeList = {
+  /**
+   * Puntos evaluados.
+   */
+  points: Scores
+
+  /**
+   * Nota calculada.
+   */
+  grade: number
+
+  /**
+   * Nota formateada y el estado
+   */
+  qualification: QualificationType
+
+  /**
+   * Estado aprobada o reprobada.
+   */
+  isApproved: boolean
+
+  /**
+   * Nota formateada segun la escala.
+   */
+  formatted: string
+}
