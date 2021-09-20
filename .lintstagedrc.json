@@ -1,6 +1,5 @@
 {
-  "lib/**/*.ts": [
-    "eslint --fix",
-    "prettier-standard"
-  ]
+  "lib/**/*.ts": ["eslint --fix", "prettier --write"],
+  "{lib,.vscode}/**/*.{js,json,yml}": ["prettier --write"],
+  "*.{json,md,js,yml}": ["prettier --write"]
 }
