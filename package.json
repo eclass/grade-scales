@@ -12,7 +12,8 @@
     "lint:check": "eslint 'lib/**/*.ts'",
     "test": "echo \"Nothing found tests.\"",
     "watch": "tsc --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
