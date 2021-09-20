@@ -1,8 +1,4 @@
 {
-  "extends": [
-    "@eclass:js-lib"
-  ],
-  "assignees": [
-    "SeGonzalezR"
-  ]
+  "extends": ["github>eclass/renovate-config:js-app"],
+  "assignees": ["SeGonzalezR"]
 }
