@@ -7,7 +7,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write 'lib/**/*.ts'",
+    "format": "prettier --write '{lib,.vscode}/**/*.{ts,json,yml}' '.*.{json,md,js,yml}'",
     "lint": "eslint 'lib/**/*.ts' --fix",
     "lint:check": "eslint 'lib/**/*.ts'",
     "test": "echo \"Nothing found tests.\"",
