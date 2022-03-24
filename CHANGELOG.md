@@ -1,3 +1,31 @@
+### [1.5.10](https://github.com/eclass/grade-scales/compare/v1.5.9...v1.5.10) (2022-03-24)
+
+
+### 🤖 Internal
+
+* **deps:** update dependency @semantic-release/git to v9.0.1 ([f2ffc0f](https://github.com/eclass/grade-scales/commit/f2ffc0f7ce17bafb63fb2dcd6236a61e700847c5))
+* **deps:** update dependency @types/node to v14.17.17 ([a740227](https://github.com/eclass/grade-scales/commit/a740227a2ff58e705b55504d65789023cce74b0c))
+* **deps:** update dependency ajv to 6.12.3 [security] ([2c5b76e](https://github.com/eclass/grade-scales/commit/2c5b76e5af6569d91777398482c7e3f605e0cef1))
+* **deps:** update dependency eslint-plugin-prettier to v4 ([9e04926](https://github.com/eclass/grade-scales/commit/9e049268ec850b6752a046d00bc00649c49644bf))
+* **deps:** update dependency eslint-plugin-promise to v5.2.0 ([94c378e](https://github.com/eclass/grade-scales/commit/94c378e27d37e0542c3b4b42d85009cb3ed005bf))
+* **deps:** update dependency lint-staged to v11.2.6 ([423b711](https://github.com/eclass/grade-scales/commit/423b71132cc876c42f9fa971e4415a46856d1097))
+* **deps:** update dependency prettier to v2.4.1 ([dc85156](https://github.com/eclass/grade-scales/commit/dc8515683f4104078c6cb547de0598cc4a3f0aa3))
+* **deps:** update dependency semantic-release to v18 ([9d0ab44](https://github.com/eclass/grade-scales/commit/9d0ab44e45ef6b6acadd080ffd9291c551e109a8))
+* **deps:** update dependency ts-node to v10.7.0 ([28305dc](https://github.com/eclass/grade-scales/commit/28305dcefa8f6ce1e187210d7f734a2f515b94a9))
+* **deps:** update dependency typescript to v4.4.3 ([7dc60e4](https://github.com/eclass/grade-scales/commit/7dc60e488b3d92f10a607809a80d71f0e872db78))
+* **deps:** update node.js to v14.17.6 ([fd375cd](https://github.com/eclass/grade-scales/commit/fd375cd2b70e546930e7200da052a4d3b930f409))
+* **deps:** update typescript-eslint monorepo to v4.30.0 ([c2021fe](https://github.com/eclass/grade-scales/commit/c2021fe5d7683c0b33555e47f4d8fcb4c8b17a12))
+* **deps:** update typescript-eslint monorepo to v4.31.1 ([95835d6](https://github.com/eclass/grade-scales/commit/95835d68958d50c5632384356985385e8158ae46))
+* **husky:** migrate config to .husky ([311e950](https://github.com/eclass/grade-scales/commit/311e950f72ecb7c70d0a9137ae321728254038bc))
+* **lint-staged:** update patterns ([513da50](https://github.com/eclass/grade-scales/commit/513da502414bbc2a489773f060d6004894456516))
+* **scripts:** allow apply format to more proyect files ([041634e](https://github.com/eclass/grade-scales/commit/041634e1a27027b3e01e74bd47d8f9f5141e8d43))
+
+
+### 🐛 Corrección de Errores
+
+* **grade-round:** update redondeo cuando hay solo 1 decimal ([0e23aa0](https://github.com/eclass/grade-scales/commit/0e23aa0d26ab5393448803835341a23bb07737b9))
+* **release:** add custom rules and release notes generator ([f3380ca](https://github.com/eclass/grade-scales/commit/f3380ca32296131096546a5ab0c7640a3a8073b8))
+
 ## [1.5.9](https://github.com/eclass/grade-scales/compare/v1.5.8...v1.5.9) (2021-08-30)
 
 
