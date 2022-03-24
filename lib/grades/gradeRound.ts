@@ -9,11 +9,25 @@ export const gradeRound = (scale: ScaleAttributes, grade: number): number => {
   try {
     let rounded: number | string
     if (scale.decimals > 0) {
-      rounded = Number(
-        Math.round(Number(grade + 'e' + scale.decimals)) +
-          'e-' +
-          scale.decimals,
-      )
+      if (scale.decimals === 1) {
+        rounded = Number(
+          Math.round(Number(grade + 'e' + scale.decimals + 1)) +
+            'e-' +
+            scale.decimals +
+            1,
+        )
+        rounded = Number(
+          Math.round(Number(rounded + 'e' + scale.decimals)) +
+            'e-' +
+            scale.decimals,
+        )
+      } else {
+        rounded = Number(
+          Math.round(Number(grade + 'e' + scale.decimals)) +
+            'e-' +
+            scale.decimals,
+        )
+      }
     } else if (scale.decimals <= 0) {
       if (scale.roundType === 'ceil') {
         rounded = Math.ceil(grade)
