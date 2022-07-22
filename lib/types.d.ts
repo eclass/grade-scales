@@ -129,6 +129,15 @@ export interface ScaleAttributes {
    * Caracter separador.
    */
   decimalSeparator: string
+
+  /**
+   * Base de la escala.
+   * - Chile
+   * - Peru
+   * - Colombia
+   * - Porcentaje
+   */
+  base: string
 }
 
 export type StatusReturn = {
