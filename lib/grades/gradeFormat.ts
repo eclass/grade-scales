@@ -10,7 +10,7 @@ Agrega puntos, comas, caracteres antes o despues de la nota.
 export const gradeFormat = (scale: ScaleAttributes, grade: number): string => {
   let round = `${gradeRound(scale, grade)}`
 
-  if (round.length === 1 && scale.append === '') {
+  if (round.length === 1 && scale.append === '' && scale.base !== 'Peru') {
     round = `${round}.0`
   }
 
@@ -18,5 +18,7 @@ export const gradeFormat = (scale: ScaleAttributes, grade: number): string => {
     scale.prepend,
     round.replace('.', scale.decimalSeparator),
     scale.append,
-  ].join('')
+  ]
+    .join('')
+    .trim()
 }
