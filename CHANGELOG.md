@@ -1,3 +1,19 @@
+### [1.5.11](https://github.com/eclass/grade-scales/compare/v1.5.10...v1.5.11) (2022-07-22)
+
+
+### 🤖 Internal
+
+* **deps:** update dependency eslint-plugin-import to v2.26.0 ([941e132](https://github.com/eclass/grade-scales/commit/941e132bbdcbbfdcd3e31efbeb06908d24c638f3))
+* **deps:** update dependency minimist to 1.2.6 [security] ([b8bc739](https://github.com/eclass/grade-scales/commit/b8bc739eff9bf359ce3cb8a41d619aaf0b9e594a))
+* **deps:** update dependency semver-regex to 3.1.4 [security] ([360f6c3](https://github.com/eclass/grade-scales/commit/360f6c35426692f6dd65f732457447cab05ecb4a))
+* **deps:** update dependency trim-off-newlines to 1.0.3 [security] ([a90446d](https://github.com/eclass/grade-scales/commit/a90446d2cec20366562230423644f710ff1341f2))
+* **rules:** update linter ([d346e1c](https://github.com/eclass/grade-scales/commit/d346e1c5755b173d8dae54185f80baa9f6dc051b))
+
+
+### 🐛 Corrección de Errores
+
+* **grade-format:** correccion en escala peru, cuando es redondeo de 1 digito ([b05a58e](https://github.com/eclass/grade-scales/commit/b05a58ed3773e6454058b7ce2cc6d2354403e7a1))
+
 ### [1.5.10](https://github.com/eclass/grade-scales/compare/v1.5.9...v1.5.10) (2022-03-24)
 
 
