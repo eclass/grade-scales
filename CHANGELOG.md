@@ -1,3 +1,10 @@
+### [1.5.13](https://github.com/eclass/grade-scales/compare/v1.5.12...v1.5.13) (2024-05-03)
+
+
+### 🐛 Corrección de Errores
+
+* **grade-status:** corregimos logica para evaluar pendiente ([58cb720](https://github.com/eclass/grade-scales/commit/58cb720ee3e271a86aee7fcad8a5c58d95c73820))
+
 ### [1.5.12](https://github.com/eclass/grade-scales/compare/v1.5.11...v1.5.12) (2024-05-03)
 
 
