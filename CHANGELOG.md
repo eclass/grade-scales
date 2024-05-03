@@ -1,3 +1,15 @@
+### [1.5.12](https://github.com/eclass/grade-scales/compare/v1.5.11...v1.5.12) (2024-05-03)
+
+
+### 🤖 Internal
+
+* **deps:** update dependency node-fetch to 2.6.7 [security] ([086f43e](https://github.com/eclass/grade-scales/commit/086f43e6e5546302960ec4929f7a035c86ab06e5))
+
+
+### 🐛 Corrección de Errores
+
+* **grade-status:** corregimos estado cuando el minimo escala es 0 ([50b158b](https://github.com/eclass/grade-scales/commit/50b158b47817ca2f88aecae03a7840809365ea17))
+
 ### [1.5.11](https://github.com/eclass/grade-scales/compare/v1.5.10...v1.5.11) (2022-07-22)
 
 
