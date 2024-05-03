@@ -9,10 +9,14 @@ export const gradeStatus = (
   grade?: number,
   isApproved = true,
 ): StatusReturn => {
+  let isPending = !grade && isApproved
+  if (isPending && grade === 0) {
+    isPending = false
+  }
   /**
    * Si la nota viene nula la marcamos como pendiente.
    */
-  if (!grade && isApproved && scale.min !== 0) {
+  if (isPending) {
     return {
       id: 0,
       name: 'Pendiente',
