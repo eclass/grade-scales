@@ -1,3 +1,10 @@
+### [1.5.14](https://github.com/eclass/grade-scales/compare/v1.5.13...v1.5.14) (2024-08-19)
+
+
+### 🐛 Corrección de Errores
+
+* **grades:** format null grades to 0 ([f05ca0e](https://github.com/eclass/grade-scales/commit/f05ca0e3d98717c840ac606f16b8708d2c9e4e0c))
+
 ### [1.5.13](https://github.com/eclass/grade-scales/compare/v1.5.12...v1.5.13) (2024-05-03)
 
 
