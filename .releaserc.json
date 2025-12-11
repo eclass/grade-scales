@@ -1,60 +1,19 @@
 {
   "plugins": [
-    [
-      "@semantic-release/commit-analyzer",
-      {
-        "releaseRules": "./releaserules.js"
-      }
-    ],
-    [
-      "@semantic-release/release-notes-generator",
-      {
-        "preset": "conventionalCommits",
-        "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
-        },
-        "presetConfig": {
-          "types": [
-            {
-              "type": "feat",
-              "section": "🆕 Nuevas características"
-            },
-            {
-              "type": "fix",
-              "section": "🐛 Corrección de Errores"
-            },
-            {
-              "type": "docs",
-              "section": "📚 Documentación",
-              "hidden": false
-            },
-            {
-              "type": "chore",
-              "section": "🤖 Internal",
-              "hidden": false
-            },
-            {
-              "type": "refactor",
-              "section": "🤖 Internal refactor",
-              "hidden": false
-            },
-            {
-              "type": "perf",
-              "section": "🤖 Internal performance",
-              "hidden": false
-            },
-            {
-              "type": "test",
-              "section": "🧪 Testing",
-              "hidden": false
-            }
-          ]
-        }
-      }
-    ],
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/npm",
-    "@semantic-release/git",
-    "@semantic-release/github"
+    [
+      "@semantic-release/github",
+      {
+        "successComment": false,
+        "failComment": false,
+        "failTitle": false,
+        "labels": false,
+        "releasedLabels": false
+      }
+    ],
+    "@semantic-release/git"
   ]
 }
