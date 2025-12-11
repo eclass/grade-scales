@@ -60,10 +60,12 @@ export const getGrade = (
     let { grade, approveMinPoints } = calcGrade(scale, total, obtained)
     grade = gradeRound(scale, grade)
 
-    if (obtained < approveMinPoints && scale.passingGrade == grade) {
-        grade = scale.passingGrade - (scale.decimals > 0 ? Math.pow(10, -scale.decimals) : 1);
+    if (obtained < approveMinPoints && scale.passingGrade === grade) {
+      grade =
+        scale.passingGrade -
+        (scale.decimals > 0 ? Math.pow(10, -scale.decimals) : 1)
     }
 
-    return grade;
+    return grade
   }
 }
