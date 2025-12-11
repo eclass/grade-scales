@@ -1,6 +1,11 @@
 import { gradeRound } from './grades'
 import { ScaleAttributes } from './types'
 
+interface CalcGradeResult {
+  grade: number
+  approveMinPoints: number
+}
+
 /**
  * Hace el cálculo de la nota en base al puntaje obtenido y el total con la Escala de notas
  *
@@ -10,12 +15,12 @@ export const calcGrade = (
   scale: ScaleAttributes,
   total: number,
   obtained: number,
-): number => {
+): CalcGradeResult => {
   let grade = 0
-  if (scale.passingPercentage > 0) {
-    const passingPercentage = scale.passingPercentage / 100
-    const approveMinPoints = total * passingPercentage
+  const passingPercentage = scale.passingPercentage / 100
+  const approveMinPoints = total * passingPercentage
 
+  if (scale.passingPercentage > 0) {
     let weight: number
     let calcWeight: number
 
@@ -31,7 +36,7 @@ export const calcGrade = (
   } else {
     grade = (scale.max * obtained) / total
   }
-  return grade
+  return { grade, approveMinPoints }
 }
 
 /**
@@ -52,6 +57,13 @@ export const getGrade = (
   } else if (obtained <= 0) {
     return scale.min
   } else {
-    return gradeRound(scale, calcGrade(scale, total, obtained))
+    let { grade, approveMinPoints } = calcGrade(scale, total, obtained)
+    grade = gradeRound(scale, grade)
+
+    if (obtained < approveMinPoints && scale.passingGrade == grade) {
+        grade = scale.passingGrade - (scale.decimals > 0 ? Math.pow(10, -scale.decimals) : 1);
+    }
+
+    return grade;
   }
 }
