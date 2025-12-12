@@ -45,7 +45,7 @@
     "@typescript-eslint/eslint-plugin": "4.31.1",
     "@typescript-eslint/parser": "4.31.1",
     "eslint": "7.32.0",
-    "eslint-config-prettier": "8.3.0",
+    "eslint-config-prettier": "8.10.2",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-array-func": "3.1.7",
     "eslint-plugin-eslint-comments": "3.2.0",
