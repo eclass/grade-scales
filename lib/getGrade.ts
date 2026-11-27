@@ -16,6 +16,9 @@ export const calcGrade = (
   total: number,
   obtained: number,
 ): CalcGradeResult => {
+  if (total <= 0) {
+    return { grade: scale.min, approveMinPoints: 0 }
+  }
   let grade = 0
   const passingPercentage = scale.passingPercentage / 100
   const approveMinPoints = total * passingPercentage
@@ -25,6 +28,9 @@ export const calcGrade = (
     let calcWeight: number
 
     if (obtained > approveMinPoints) {
+      if (total === approveMinPoints) {
+        return { grade: scale.max, approveMinPoints }
+      }
       weight = (scale.max - scale.passingGrade) / (total - approveMinPoints)
       calcWeight = scale.max - weight * total
     } else {
@@ -61,9 +67,11 @@ export const getGrade = (
     grade = gradeRound(scale, grade)
 
     if (obtained < approveMinPoints && scale.passingGrade === grade) {
-      grade =
+      grade = gradeRound(
+        scale,
         scale.passingGrade -
-        (scale.decimals > 0 ? Math.pow(10, -scale.decimals) : 1)
+          (scale.decimals > 0 ? Math.pow(10, -scale.decimals) : 1),
+      )
     }
 
     return grade

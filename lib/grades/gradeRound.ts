@@ -5,31 +5,25 @@ import { ScaleAttributes } from '../types'
  *
  * @example const rounded = gradeRound(scale, 30.522)
  */
+const roundWithDecimals = (value: number, decimals: number): number => {
+  const scaled = Math.round(Number(`${value}e${decimals}`))
+  return Number(`${scaled}e-${decimals}`)
+}
+
 export const gradeRound = (scale: ScaleAttributes, grade: number): number => {
   try {
-    let rounded: number | string
-    if (grade === null) {
+    let rounded: number | string = 0
+    if (grade === null || grade === undefined || !Number.isFinite(grade)) {
       return Number(0)
     }
     if (scale.decimals > 0) {
-      if (scale.decimals === 1) {
-        rounded = Number(
-          Math.round(Number(grade + 'e' + scale.decimals + 1)) +
-            'e-' +
-            scale.decimals +
-            1,
-        )
-        rounded = Number(
-          Math.round(Number(rounded + 'e' + scale.decimals)) +
-            'e-' +
-            scale.decimals,
-        )
+      if (String(grade).toLowerCase().includes('e')) {
+        rounded = Number(grade.toFixed(scale.decimals))
+      } else if (scale.decimals === 1) {
+        rounded = roundWithDecimals(grade, scale.decimals + 1)
+        rounded = roundWithDecimals(rounded, scale.decimals)
       } else {
-        rounded = Number(
-          Math.round(Number(grade + 'e' + scale.decimals)) +
-            'e-' +
-            scale.decimals,
-        )
+        rounded = roundWithDecimals(grade, scale.decimals)
       }
     } else if (scale.decimals <= 0) {
       if (scale.roundType === 'ceil') {
