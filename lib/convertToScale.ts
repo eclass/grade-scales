@@ -50,6 +50,9 @@ export const convertToScale = (
   // calculamos ambos rangos (antiguo y nuevo)
   const oldRange = convert.scale.max - convert.scale.min
   const newRange = scale.max - scale.min
+  if (oldRange === 0) {
+    return gradeRound(scale, scale.min)
+  }
 
   // transformamos la nota
   const newGrade =
